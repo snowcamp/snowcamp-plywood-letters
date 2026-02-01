@@ -55,3 +55,7 @@ Avant d'utiliser ces fichiers, lire le fichier [ameliorations.md](/ameliorations
 ## Bill of Materials
 
 [Voir la liste des matériaux et outils utilisés](/BOM.md)
+
+## Améliorations
+
+[Voir la liste des améliorations possibles](/ameliorations.md)
