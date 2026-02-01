@@ -51,3 +51,7 @@ Pour la création des contrepoids, les fichiers d'impression 3D sont les suivant
 - [snowcamp_poids_W_lid.3mf](/src/snowcamp_poids_W_lid.3mf)
 
 Avant d'utiliser ces fichiers, lire le fichier [ameliorations.md](/ameliorations.md) ainsi que les détails techniques [pour la découpe](/decoupe_laser.md) et [pour l'impression 3D](/fichier_impression3D.md).
+
+## Bill of Materials
+
+[Voir la liste des matériaux et outils utilisés](/BOM.md)
