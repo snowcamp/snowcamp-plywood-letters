@@ -1,6 +1,6 @@
 # Logo Snowcamp en contreplaqué
 
-Ce projet documente la création du logo Snowcamp en contreplaqué qui est affiché sur la scène de la conférence.
+Ce projet documente la création du logo Snowcamp en contreplaqué qui est affiché sur la scène de la conférence [Snowcamp.io](https://snowcamp.io/).
 
 ![Photos du logo de la conférence sur scène](media/plywood_scene.jpeg)
 
@@ -8,7 +8,7 @@ Ce projet documente la création du logo Snowcamp en contreplaqué qui est affic
 
 La conception 3D des lettres a été faite depuis le logiciel OnShape.
 
-Le document de conception est disponible depuis [ce lien](https://cad.onshape.com/documents/e505e8593a2fc47bad0547f7/w/a2e19de377bd4450dc694335/e/f0019e91c5ae519defc0f1de?renderMode=6&uiState=696641a15a318394398b9e02)
+Le document de conception est disponible depuis [ce lien](https://cad.onshape.com/documents/e505e8593a2fc47bad0547f7/w/a2e19de377bd4450dc694335/e/f0019e91c5ae519defc0f1de?renderMode=6&uiState=696641a15a318394398b9e02).
 
 [Voir les détails de la section conception 3D](/conception.md)
 
@@ -17,7 +17,7 @@ Le document de conception est disponible depuis [ce lien](https://cad.onshape.co
 
 ## Découpe laser
 
-La découpe laser a été faite au [FabLab de la Casemate à Grenoble](https://fablab.lacasemate.fr/) avec la machine Trotec SP 500
+La découpe laser a été faite au [FabLab de la Casemate à Grenoble](https://fablab.lacasemate.fr/) avec la machine Trotec SP 500.
 
 [Voir les détails de la section découpe laser](/decoupe_laser.md)
 
@@ -25,11 +25,15 @@ La découpe laser a été faite au [FabLab de la Casemate à Grenoble](https://f
 
 ## Assemblage
 
+L'assemblage a été fait avec de la colle à bois, des serre-joints, du scotch et plein de cure-dents.
+
 [Voir les détails de la section assemblage](/assemblage.md)
 
 ![Photos des lettres assemblées et non peintes](media/assemblage/IMG_3324.jpeg)
 
 ## Peinture
+
+La peinture a été faite au pistolet à peinture et à la bombe.
 
 [Voir les détails de la section peinture](/peinture.md)
 
