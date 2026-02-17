@@ -124,3 +124,45 @@ Enfin pour finaliser le document pour la découpe nous avons sélectionné tous 
 - Nous avons mis en rouge tous les traits à couper
 - Nous avons mis en bleu tous les traits liés au `Living Hinge`
 - Nous avons mis en vert tous les traits de marquage des pièces
+
+## Nest&Cut
+
+Lors de la conférence, un membre de la [scop Alma](https://www.alma.fr/) est venu nous parler de leur application [Nest&Cut](https://nestandcut.com/). Il s'agit d'une application web spécialisée dans le placement automatique de pièces dans un plan de découpe avec l'avantage d'être gratuite pour les associations à but non lucratif.
+
+Une fois la conférence passée nous avons donc testé l'application afin voir si elle nous aurait permis de gagner du temps ou de réduire la quantité de matériaux utilisés.
+
+L'application est assez simple d'utilisation et se passe en 3 étapes:
+- L'import des pièces 3D
+- La configuration de la taille des plaques et de leur nombre
+- La génération et le téléchargement du résultat
+
+Pour l'import des pièces en 3D, depuis OnShape il nous a suffi de sélectionner toutes les pièces et de les exporter au format STEP avec l'option `Export unique parts as individual files` activée. Cela économise donc toute la création d'un `Assembly` comme décrit précédemment, étape qui avait pris plusieurs heures à l'époque ([plus de détails](/conception.md#préparation-de-lexport)).
+
+![Image montrant l'écran d'import des pièces dans Nest&Cut](media/conception_nestcut_1.png)
+
+Pour la configuration de la taille des plaques, nous avons créé une entrée avec les dimensions de nos plaques, défini leur quantité, défini une marge de 5mm au niveau des bords des plaques afin de pouvoir utiliser les cales du FabLab de Grenoble et activé la rotation libre des pièces.
+
+![Image montrant l'écran de configuration des plaques dans Nest&Cut](media/conception_nestcut_2.png)
+
+Nous avons ensuite démarré l'optimisation. Avec la qualité au maximum cela a pris à peu près 5min. Le résultat a ensuite été affiché et nous avons pu télécharger le résultat au format DXF. A partir de ce point il est possible de reprendre notre process dans Inkscape pour préparer la découpe comme décrit précédemment ([plus de détails](/conception.md#modifications-dans-inkscape)).
+
+![Image montrant l'écran de résultat dans Nest&Cut](media/conception_nestcut_3.png)
+
+Le résultat est sans appel:
+- Durée du process: 1/4 d'heure avec Nest&Cut contre plusieurs heures avec le process manuel
+- Nombre de plaques: 9 plaques avec Nest&Cut contre 11 plaques avec le process manuel, soit à peu près 20% de matériaux économisés
+
+Plan de découpe avec le process manuel:
+![Image montrant le plan de découpe avec le process manuel](media/conception_nestcut_4.png)
+
+Plan de découpe généré par Nest&Cut:
+![Image montrant le plan de découpe généré par Nest&Cut](media/conception_nestcut_5.png)
+
+Cependant nous avons rencontré les quelques problèmes suivants:
+- Comme fonction `Sheet Metal Model` avait découpé certaines courbes là où il ne fallait pas, dans le process manuel nous avions recollé ces pièces ensemble dans le document `Assembly`. Or avec l'export en STEP, ces pièces sont séparées et Nest&Cut n'a pas moyen de savoir qu'elles doivent être réunies.
+- La rotation libre permet de gagner beaucoup de place, mais cela rend plus difficile une fois dans Inkscape de rajouter les `Living Hinge` car en plus de les placer en X et Y il faut maintenant leur appliquer une rotation précise.
+- L'étape d'identification et numérotation des pièces aurait été plus compliquée car une fois le plan de coupe généré dans Nest&Cut toutes les pièces perdent leur nom (spécificité du format DXF).
+- L'optimisation d'espace est tel qu'il aurait été plus compliqué de couper les dernières plaques en plusieurs fois lorsqu'elles avaient gondolé. Cependant la vitesse de génération de Nest&Cut est telle que nous aurions pu regénérer le document facilement.
+- 2 pièces de type `Sheet Metal Model` n'ont pas pu être importées dans Nest&Cut et provoquaient une erreur. Pour notre test nous avons remplacé ces 2 pièces par d'autres pièces équivalentes en taille. Nous avons contacté l'équipe pour savoir d'où venait ce bug, nous modifieront ce document une fois la réponse obtenue.
+
+Ces quelques problèmes viennent cependant plus de notre façon de travailler avec OnShape que de Nest&Cut en lui-même.
